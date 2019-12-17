@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_friends"
+        android:title="Search Friends"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        />
+    <item android:id="@+id/action_events"
+        android:title="Search Events"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+</menu>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zhenlong.Fitness">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.zhenlong.Fitness.Activity.PopularEvents"></activity>
+        <activity android:name="com.zhenlong.Fitness.Activity.NearByEvents" />
+        <activity android:name="com.zhenlong.Fitness.Activity.SignUpActivity" />
+        <activity android:name="com.zhenlong.Fitness.Activity.ChatRoomActivity" />
+        <activity android:name="com.zhenlong.Fitness.Activity.UserDetail" />
+        <activity android:name="com.zhenlong.Fitness.Test.TestActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.zhenlong.Fitness.Activity.EventOnActivity"
+            android:parentActivityName="com.zhenlong.Fitness.Activity.MenuActivity" />
+        <activity android:name="com.zhenlong.Fitness.Activity.JoinActivity" />
+        <activity android:name="com.zhenlong.Fitness.Activity.SearchEventActivity" />
+        <activity android:name="com.zhenlong.Fitness.Activity.CreateEventActivity" />
+        <activity android:name="com.zhenlong.Fitness.Activity.LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.zhenlong.Fitness.Activity.MenuActivity" />
+        <activity android:name="com.zhenlong.Fitness.Activity.MyEventActivity" />
+        <activity android:name="com.zhenlong.Fitness.Activity.MapActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name="com.zhenlong.Fitness.Service.JWebSocketClientService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+</manifest>

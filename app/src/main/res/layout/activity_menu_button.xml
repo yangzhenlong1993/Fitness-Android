@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buttom_menu_design">
+
+    <LinearLayout
+        android:id="@+id/linear_home"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- 通过设置 ImageButton  android:clickable="false" 属性 ; 使其 没有点击的属性,不和 LinearLayout抢占点击事件 -->
+
+        <ImageButton
+            android:id="@+id/img_home"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_home_black_18dp" />
+
+        <TextView
+            android:id="@+id/menu_button_tv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:textColor="@android:color/black"
+            android:textSize="0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/img_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_search_black_18dp" />
+
+        <TextView
+            android:id="@+id/menu_button_tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:textColor="@android:color/black"
+            android:textSize="0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/img_friends"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_supervisor_account_black_18dp" />
+
+        <TextView
+            android:id="@+id/menu_button_tv_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FRIENDS"
+            android:textColor="@android:color/black"
+            android:textSize="0sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_me"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/img_me"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_account_circle_black_18dp" />
+
+        <TextView
+            android:id="@+id/menu_button_tv_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ME"
+            android:textColor="@android:color/black"
+            android:textSize="0sp" />
+    </LinearLayout>
+</LinearLayout>

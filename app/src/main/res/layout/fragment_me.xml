@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="#F44336"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="6dp"
+                    android:src="@drawable/photo"/>
+
+                <ImageView
+                    android:src="@drawable/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/me_username"
+                android:text="Tea Bag High"
+                android:textAlignment="center"
+                android:textSize="35sp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/me_level"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+
+                android:layout_width="wrap_content"
+                android:layout_height="90dp">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Gender:"
+                android:textAlignment="textStart"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowColor="#F44336"
+                android:shadowRadius="0.6">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/me_gender"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:text="Female"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                android:shadowColor="#F44336"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="0.6">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Date of Birth:"
+                android:textAlignment="textStart"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowColor="#F44336"
+                android:shadowRadius="0.6">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/me_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:text="30/03/2001"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                android:shadowColor="#F44336"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="0.6">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Weight:"
+                android:textAlignment="textStart"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowColor="#F44336"
+                android:shadowRadius="0.6">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/me_weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:text="100 KG"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                android:shadowColor="#F44336"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="0.6">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                android:text="Height:"
+                android:textAlignment="textStart"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowColor="#F44336"
+                android:shadowRadius="0.6">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/me_height"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+
+                android:text="203 CM"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"
+
+                android:shadowColor="#F44336"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="0.6">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>

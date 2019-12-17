@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LogInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhenlong.Fitness.Weight.CustomVideoView
+            android:id="@+id/log_in_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            />
+        <EditText
+            android:id="@+id/log_in_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/baseline_account_box_black_18dp"
+            android:layout_marginTop="250dp"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="Name"
+            android:background="@drawable/rounded_text"
+            android:alpha="0.7"/>
+
+
+        <EditText
+            android:id="@+id/log_in_password_et"
+            android:layout_below="@+id/log_in_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/baseline_vpn_key_black_18dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="Password"
+            android:background="@drawable/rounded_text"
+            android:alpha="0.7"/>
+        <Button
+            android:id="@+id/log_in_login_btn"
+            android:layout_below="@+id/log_in_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#f44336"
+            android:text="Login"
+            android:alpha="0.7"/>
+
+        <Button
+            android:id="@+id/log_in_signup_btn"
+            android:layout_below="@+id/log_in_login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:backgroundTint="#f44336"
+            android:text="SignUp"
+            android:alpha="0.7"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

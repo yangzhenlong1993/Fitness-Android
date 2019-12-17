@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SignUpActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhenlong.Fitness.Weight.CustomVideoView
+            android:id="@+id/sign_up_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+
+            />
+        <EditText
+            android:id="@+id/sign_up_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="250dp"
+            android:inputType="textPersonName"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="Name"
+            android:background="@drawable/rounded_text"
+            android:alpha="0.7"/>
+
+
+        <EditText
+            android:id="@+id/sign_up_password_et"
+            android:layout_below="@+id/sign_up_username_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="Password"
+            android:background="@drawable/rounded_text"
+            android:alpha="0.7"/>
+
+        <Spinner
+            android:id="@+id/sign_up_gender"
+            android:layout_below="@+id/sign_up_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/rounded_text"
+            android:alpha="0.7"/>
+
+        <EditText
+            android:id="@+id/sign_up_height_et"
+            android:layout_below="@+id/sign_up_gender"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="Height"
+            android:background="@drawable/rounded_text"
+            android:alpha="0.7"/>
+
+        <EditText
+            android:id="@+id/sign_up_weight_et"
+            android:layout_below="@+id/sign_up_height_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:hint="Weight"
+            android:background="@drawable/rounded_text"
+            android:alpha="0.7"/>
+
+        <Button
+            android:id="@+id/sign_up_signup_btn"
+            android:layout_below="@+id/sign_up_weight_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:backgroundTint="#f44336"
+            android:text="SignUp"
+            android:alpha="0.7"/>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
